@@ -2,7 +2,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 // Context
-import CitiesProvider from './context/CitiesContext';
+import { CitiesProvider } from './context/CitiesContext';
 
 // Pages
 import Homepage from './pages/Homepage';

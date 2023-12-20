@@ -1,12 +1,16 @@
 // CSS
 import styles from './CountryList.module.css';
 
+// Hooks
+import { useCities } from '../context/CitiesContext';
+
 // Components
 import Spinner from './Spinner';
 import CountryItem from './CountryItem';
 import Message from './Message';
 
-export default function CountryList({ cities, isLoading }) {
+export default function CountryList() {
+  const { cities, isLoading } = useCities();
   if (isLoading) return <Spinner />;
   if (!cities.length)
     return <Message message='Add your first country by clicking on the map' />;
