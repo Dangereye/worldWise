@@ -35,6 +35,30 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Wrexham",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-12-21T21:50:31.756Z",
+      "notes": "",
+      "position": {
+        "lat": "53.04534123332914",
+        "lng": "-2.9896545410156254"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Mold",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-12-21T21:52:04.707Z",
+      "notes": "",
+      "position": {
+        "lat": "53.16539504966694",
+        "lng": "-3.0807423591613774"
+      },
+      "id": 98443199
     }
   ]
 }
