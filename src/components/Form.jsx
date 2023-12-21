@@ -35,6 +35,7 @@ export default function Form() {
 
   useEffect(() => {
     async function getCity() {
+      if (!lat && !lng) return;
       try {
         setIsLoadingGeocoding(true);
         setGeocodingError('');
@@ -50,8 +51,6 @@ export default function Form() {
             "Well, that doesn't seem to be a city. Try clicking somewhere else."
           );
 
-        console.log(data);
-
         setCityName(data.city || data.locality || '');
         setCountry(data.countryName);
         setEmoji(convertToEmoji(data.countryCode));
@@ -65,6 +64,9 @@ export default function Form() {
   }, [lat, lng]);
 
   if (isLoadingGeocoding) return <Spinner />;
+
+  if (!lat && !lng)
+    return <Message message='Start by clicking somewhere on the map.' />;
 
   if (geocodingError) return <Message message={geocodingError} />;
 
