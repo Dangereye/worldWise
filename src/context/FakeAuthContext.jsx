@@ -53,6 +53,7 @@ function useFakeAuth() {
   if (context === undefined) {
     throw new Error('FakeAuthContext was used outside the FakeAuthProvider.');
   }
+  return context;
 }
 
 export { FakeAuthProvider, useFakeAuth };
