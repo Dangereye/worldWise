@@ -35,6 +35,18 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Mold",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-12-27T22:13:57.394Z",
+      "notes": "",
+      "position": {
+        "lat": "53.165340377517616",
+        "lng": "-3.0802112817764287"
+      },
+      "id": 98443198
     }
   ]
 }

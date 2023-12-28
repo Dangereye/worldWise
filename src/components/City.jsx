@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 
 // React router
-import { useParams, useSearchParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 // CSS
 import styles from './City.module.css';
@@ -26,15 +26,11 @@ function City() {
   const { id } = useParams();
   const { getCity, currentCity, isLoading } = useCities();
 
-  const [searchParams, setSearchParams] = useSearchParams();
-  const lat = searchParams.get('lat');
-  const lng = searchParams.get('lng');
-
   useEffect(() => {
     getCity(id);
-  }, [id]);
+  }, [id, getCity]);
 
-  const { cityName, country, emoji, date, notes } = currentCity;
+  const { cityName, emoji, date, notes } = currentCity;
   if (isLoading) return <Spinner />;
   return (
     <div className={styles.city}>
